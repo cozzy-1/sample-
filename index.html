@@ -116,7 +116,7 @@
             <div class="bg-pink-50 rounded-xl p-6 hover-lift">
                 <h2 class="text-3xl md:text-4xl font-bold text-pink-500 mb-4">A Note...</h2>
                 <p class="text-gray-800 leading-relaxed text-base md:text-lg">
-                 <p>  Be happy, Girl it's ur birthday 🎂 🥳🥳.  </p>  
+                    <p>  Be happy, Girl it's ur birthday 🎂 🥳🥳.   </p>  
             </div>
         </section>
 
@@ -172,23 +172,23 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Image 1 -->
                 <div class="rounded-xl overflow-hidden shadow-md hover-lift">
-                    <img src="pre.jpg" alt="A moment" class="w-full h-auto object-cover cursor-pointer" onclick="openFullscreen(this)">
+                    <img src="pre.jpg" alt="A moment" class="w-full h-auto object-contain cursor-pointer" onclick="openFullscreen(this)">
                 </div>
                 <!-- Image 2 -->
                 <div class="rounded-xl overflow-hidden shadow-md hover-lift">
-                    <img src="tty.jpg" alt="A day" class="w-full h-auto object-cover cursor-pointer" onclick="openFullscreen(this)">
+                    <img src="tty.jpg" alt="A day" class="w-full h-auto object-contain cursor-pointer" onclick="openFullscreen(this)">
                 </div>
                 <!-- Image 3 -->
                 <div class="rounded-xl overflow-hidden shadow-md hover-lift">
-                    <img src="preety3.jpg" alt="a day" class="w-full h-auto object-cover cursor-pointer" onclick="openFullscreen(this)">
+                    <img src="preety3.jpg" alt="a day" class="w-full h-auto object-contain cursor-pointer" onclick="openFullscreen(this)">
                 </div>
                 <!-- Image 4 -->
                 <div class="rounded-xl overflow-hidden shadow-md hover-lift">
-                    <img src="pretty4.jpg" alt="a day" class="w-full h-auto object-cover cursor-pointer" onclick="openFullscreen(this)">
+                    <img src="pretty4.jpg" alt="a day" class="w-full h-auto object-contain cursor-pointer" onclick="openFullscreen(this)">
                 </div>
                 <!-- Image 5 -->
                 <div class="rounded-xl overflow-hidden shadow-md hover-lift">
-                    <img src="pretty.jpg" alt="a day" class="w-full h-auto object-cover cursor-pointer" onclick="openFullscreen(this)">
+                    <img src="pretty.jpg" alt="a day" class="w-full h-auto object-contain cursor-pointer" onclick="openFullscreen(this)">
                 </div>
             </div>
         </section>
@@ -245,6 +245,7 @@
             const videoElement = document.getElementById('fullscreenVideo');
             
             videoElement.src = videoSrc;
+            videoElement.load();
             
             // Wait for the video to be ready before playing it
             videoElement.addEventListener('canplay', () => {
@@ -264,8 +265,3 @@
     </script>
 </body>
 </html>
-
-
-
-
-
